@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(218, 221, 223);
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  gap: 50px;
+  right: 0;
+  animation-name: navanim;
+  animation-duration: 0.8s;
+}
+
+.nav-links > li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(0, 80, 100);
+}
+
+.nav-links > li > i {
+  color: rgb(0, 80, 100);
+}
+
+.about-img {
+  width: 100%;
+}
+.fa-bars {
+  font-size: 60px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  height: 200px;
+  background-color: #ffffff;
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(52, 83, 109);
+  border-radius: 6px;
+}
+
+.aboutMe {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: rgb(218, 221, 223);
+}
+
+.aboutMe-text {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: o;
+}
+
+.textContent > h2 {
+  color: rgb(52, 83, 109);
+}
+
+.textContent > h3 {
+  color: rgb(52, 83, 109);
+}
+/*My goal styling*/
+.myGoals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myGoals > h2 {
+  color: rgb(113, 125, 126);
+}
+.myGoals > p {
+  color: rgb(113, 125, 126);
+  width: 70%;
+  font-size: 20px;
+}
+
+.goalCards {
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+  margin: 20px;
+}
+
+.cards {
+  background-color: rgb(218, 221, 223);
+  color: rgb(52, 83, 109);
+  border-radius: 5px;
+  padding: 40px;
+  width: 300px;
+  height: 600px;
+}
+.abtMob {
+  display: none;
+}
+p {
+  font-size: 12px;
+}
+.cards > h2 {
+  height: 100px;
+}
+.goalCards h2 {
+  font-size: 30px;
+}
+.goalCards h3 {
+  font-size: 25px;
+}
+
+/* goal styling ends*/
+.mobtop {
+  display: none;
+}
+/*mobile nav styling*/
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+  width: 100%;
+  height: 550vh;
+  z-index: 1;
+}
+
+.fa-cube {
+  font-size: 60px;
+  color: rgb(52, 83, 109);
+}
+
+.fa-bars {
+  display: none;
+  margin-bottom: 20px;
+  color: rgb(52, 83, 109);
+}
+
+.mobile-nav > .nav-links > li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.mobile-nav > .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  right: 25%;
+  left: 25%;
+  top: 80px;
+}
+
+.mobile-nav > .nav-links > li > a {
+  font-size: 30px;
+}
+
+.fa-x {
+  font-size: 60px;
+  color: rgb(52, 83, 109);
+  margin: 30px;
+}
+
+/*mobile nav styling ends */
+/*footer styling*/
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(218, 221, 223);
+  justify-content: center;
+  align-self: center;
+  gap: 50px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(0, 80, 100);
+}
+
+footer p {
+  color: rgb(0, 80, 100);
+}
+.fter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*media query for mobile responsiveness styling begins*/
+@media screen and (max-width: 650px) {
+  .fa-bars {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+
+  .header-text {
+    width: 300px;
+    height: 120px;
+
+    top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(52, 83, 109);
+    border-radius: 6px;
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 10px;
+    background-color: rgb(218, 221, 223);
+  }
+
+  .imgAboutMe {
+    display: none;
+  }
+
+  .abtMob {
+    display: flex;
+  }
+
+  .aboutMe-text {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 20px;
+  }
+  .textContent > h2 {
+    color: rgb(52, 83, 109);
+    font-size: 30px;
+    text-align: center;
+  }
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .myGoals > h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .myGoals > p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .goalCards {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .mobtop > ul > li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 9px;
+  }
+  .mobtop > ul > li > a {
+    text-decoration: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(218, 221, 223);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    height: 30px;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  footer a {
+    text-decoration: none;
+    font-size: 9px;
+    color: rgb(0, 80, 100);
+    margin: 0;
+  }
+
+  footer p {
+    color: rgb(0, 80, 100);
+    font-size: 9px;
+    margin: 0;
+  }
+  .fter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
