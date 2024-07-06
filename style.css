@@ -185,6 +185,7 @@ p {
   display: none;
   margin-bottom: 20px;
   color: rgb(52, 83, 109);
+  position: fixed;
 }
 
 .mobile-nav > .nav-links > li {
@@ -314,8 +315,8 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    position: fixed;
-    top: 20px;
+    
+    
     
   }
   .mobtop > ul > li {
