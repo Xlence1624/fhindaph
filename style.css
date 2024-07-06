@@ -319,11 +319,7 @@ footer p {
     
     
   }
-  .fa-house{
 
-    position: absolute;
-    justify-item: flex-end;
-  }
   .mobtop > ul > li {
     list-style: none;
     display: flex;
